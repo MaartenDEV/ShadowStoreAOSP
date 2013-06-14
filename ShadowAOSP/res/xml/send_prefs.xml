@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ <PreferenceCategory
+   android:summary="Username and password information"
+   android:title="Set message" >
+  <EditTextPreference
+     android:key="message"
+     android:summary="Set the message that will be send"
+     android:title="Message" />
+ 
+ </PreferenceCategory>
+ <PreferenceCategory
+     android:title="Send" >
+     
+     <Preference
+         android:key="send"
+         android:title="Send"
+         android:summary="Send the notification now" />
+     
+     
+ </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ <PreferenceCategory
+   android:summary="Username and password information"
+   android:title="Reboot" >
+   
+  <Preference
+     android:key="reboot"
+     android:summary="This will reboot your device"
+     android:title="Reboot" />
+  </PreferenceCategory>
+  <PreferenceCategory
+   android:summary="Username and password information"
+   android:title="Recovery" >
+  <Preference
+     android:key="recovery"
+     android:summary="This will reboot your device into recovery mode"
+     android:title="Reboot recovery" />
+  </PreferenceCategory>
+  <PreferenceCategory
+   android:summary="Username and password information"
+   android:title="Bootloader" >
+  <Preference
+     android:key="bootloader"
+     android:summary="This will reboot your device into bootloader mode"
+     android:title="Reboot bootloader" />
+  
+ </PreferenceCategory>
+</PreferenceScreen>

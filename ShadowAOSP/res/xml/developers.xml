@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ <PreferenceCategory
+  android:title="Team members" >
+  
+     <Preference
+         android:title="MaartenXDA"
+         android:summary="Main developer, Shadow Store maker"
+         android:key="maartenxda" />
+     <Preference
+         android:title="Xpirt"
+         android:summary="Co-main developer, AOSP inversion builder"
+         android:key="xpirt" />
+     <Preference
+         android:title="The Android Manual"
+         android:summary="Shadow Team themer, modder, porter"
+         android:key="tam" />
+     <Preference
+         android:title="ShadowCodeGaming"
+         android:summary="Shadow Team modder, themer"
+         android:key="scg" />
+     
+     
+ </PreferenceCategory>
+</PreferenceScreen>

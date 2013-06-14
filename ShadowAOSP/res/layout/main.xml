@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_to_refresh_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="376dp"
+        android:layout_weight="0.96"
+        ptrListViewExtrasEnabled="true"
+        ptrMode="both" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D8D8D8" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_below="@+id/layout"
+        android:background="#FFFFFF" >
+
+        <Button
+            android:id="@+id/refresh_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:onClick="refresh"
+            android:text="Refresh"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+    </RelativeLayout>
+
+</LinearLayout>

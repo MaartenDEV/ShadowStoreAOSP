@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="750px" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="750px" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="300px"
+            android:layout_height="75px"
+            android:layout_alignLeft="@+id/messagetext"
+            android:layout_below="@+id/messagetext"
+            android:layout_marginTop="38dp"
+            android:onClick="sendBug"
+            android:text="Send" />
+
+        <EditText
+            android:id="@+id/messagetext"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mailtext"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Message..."
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/mailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/messagetext"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Email..." />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="This will send a message to the chat. Your email will never be shared, but your name will be displayed in the chat."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</ScrollView>
+
+
+</FrameLayout>

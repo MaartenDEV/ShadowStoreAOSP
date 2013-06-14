@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maartenxda.shadowaosp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ENABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="9" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+       <!--  <service android:name="com.maartenxda.shadowaosp.DownloadService" />
+        
+        <service android:name="com.parse.PushService" />
+	<receiver android:name="com.parse.ParseBroadcastReceiver">
+	    
+  	<intent-filter>
+    <action android:name="android.intent.action.BOOT_COMPLETED" />
+    <action android:name="android.intent.action.USER_PRESENT" />
+	</intent-filter>
+	</receiver>  -->
+      
+        
+        <activity
+            android:name="com.maartenxda.shadowaosp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.RosieActivity"
+            android:configChanges="orientation"
+            android:label="RosieActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.RosieActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.BootAnims"
+            android:configChanges="orientation"
+            android:label="BootAnims"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.BootAnims" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.AppreciationActivity"
+            android:configChanges="orientation"
+            android:label="Appreciation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.AppreciationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.SystemUIActivity"
+            android:configChanges="orientation"
+            android:label="SystemUIActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.SystemUIActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.AdvancedActivity"
+            android:configChanges="orientation"
+            android:label="AdvancedActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.AdvancedActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.AdvancedActivity1"
+            android:configChanges="orientation"
+            android:label="AdvancedActivity1"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.AdvancedActivity1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.BootanimationActivity"
+            android:configChanges="orientation"
+            android:label="BootanimationActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.BootanimationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.GeneralActivity"
+            android:configChanges="orientation"
+            android:label="GeneralActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.GeneralActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.GeneralActivity1"
+            android:configChanges="orientation"
+            android:label="GeneralActivity1"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.GeneralActivity1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.StatusbarActivity"
+            android:configChanges="orientation"
+            android:label="StatusbarActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.StatusbarActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.News"
+            android:configChanges="orientation"
+            android:label="News"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.News" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.Mods"
+            android:configChanges="orientation"
+            android:label="Mods"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.Mods" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.ReportBugs"
+            android:configChanges="orientation"
+            android:label="ReportBugs"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.ReportBugs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.LogIn"
+            android:configChanges="orientation"
+            android:label="LogIn"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.LogIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.SignUp"
+            android:configChanges="orientation"
+            android:label="SignUp"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.SignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.SendMessage"
+            android:configChanges="orientation"
+            android:label="SendMessage"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.SendMessage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.Chat"
+            android:configChanges="orientation"
+            android:label="Chat"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.Chat" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.SendChatMessage"
+            android:configChanges="orientation"
+            android:label="SendChatMessage"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.SendChatMessage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.RosiePreferences"
+            android:configChanges="orientation"
+            android:label="RosiePrefs"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.RosiePreferences" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.RosiePreferences1"
+            android:configChanges="orientation"
+            android:label="RosiePrefs1"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.RosiePreferences1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.AndroidXMLParsingActivity"
+            android:configChanges="orientation"
+            android:label="XMLParsing"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.AndroidXMLParsingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.maartenxda.shadowaosp.Skins"
+            android:configChanges="orientation"
+            android:label="Skins"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.Skins" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.Preferences"
+            android:configChanges="orientation"
+            android:label="Prefs"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.Preferences" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.InstalledApps"
+            android:configChanges="orientation"
+            android:label="Prefs"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.InstalledApps" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.BootManager"
+            android:configChanges="orientation"
+            android:label="BootManager"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.BootManager" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.CheckForUpdate"
+            android:configChanges="orientation"
+            android:label="CheckForUpdate"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.maartenxda.shadowaosp.CheckForUpdate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        
+
+        <activity
+            android:name="com.maartenxda.shadowaosp.TestActivity"
+            android:label="TestActivity" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.AboutActivity"
+            android:label="AboutA" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.NewsActivity"
+            android:label="NewsA" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.DevelopersActivity"
+            android:label="DevelopersActivity" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.ParsingJDOM"
+            android:label="ParsingJDOM" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.SummaryActivity"
+            android:label="SummaryActivity" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.Catalogue"
+            android:label="Catalogue" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.AsyncAction"
+            android:label="AsyncAction" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.WidgetActivity"
+            android:label="WidgetActivity" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.UpdateChecker"
+            android:label="UpdateChecker" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.SingleMenuItemActivity"
+            android:label="Single Menu Item" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.FilesActivity"
+            android:label="FilesActivity" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.DialogActivity"
+            android:label="DialogActivity" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.Receiver"
+            android:label="Receiver" >
+        </activity>
+        <activity
+            android:name="com.maartenxda.shadowaosp.ListAllApps"
+            android:label="ListAllApps" >
+        </activity>
+    </application>
+
+</manifest>

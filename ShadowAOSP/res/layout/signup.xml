@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/signuppassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signupname1"
+        android:layout_below="@+id/signupname1"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Password..."
+        android:inputType="textPassword" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/signuppasswordconfirm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signuppassword1"
+        android:layout_below="@+id/signuppassword1"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Confirm password..."
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/signupbutton111"
+        android:layout_width="300px"
+        android:layout_height="75px"
+        android:layout_alignLeft="@+id/signuppasswordconfirm1"
+        android:layout_below="@+id/signuppasswordconfirm1"
+        android:layout_marginTop="46dp"
+        android:onClick="signUp"
+        android:text="Sign up" >
+    </Button>
+
+    <EditText
+        android:id="@+id/signupname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="(XDA)Name..."
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signupname1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Sign up for a ShadowDX account. Your information will never be shared."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

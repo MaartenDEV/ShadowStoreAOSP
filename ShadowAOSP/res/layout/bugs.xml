@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="127dp"
+        android:ems="10"
+        android:hint="Name..."
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/bugtext"
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:layout_alignLeft="@+id/nametext"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mailtext"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Bug description..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="300px"
+        android:layout_height="75px"
+        android:layout_alignLeft="@+id/bugtext"
+        android:layout_below="@+id/bugtext"
+        android:layout_marginTop="23dp"
+        android:onClick="sendBug"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bugtext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="This will send a message to Team ShadowDX, and they will check the messages every day. Your information will never be shared."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/mailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nametext"
+        android:layout_alignBottom="@+id/nametext"
+        android:layout_alignLeft="@+id/nametext"
+        android:ems="10"
+        android:hint="Email..." />
+
+</RelativeLayout>

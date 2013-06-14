@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+   <string-array name="listOptions">
+     <item>4x4</item>
+     <item>4x5</item>
+     <item>5x4</item>
+     <item>5x5</item>
+     </string-array>
+     
+   <string-array name="panels">
+     <item>7 panels</item>
+     <item>5 panels</item>
+     </string-array>
+ 
+   <string-array name="listValues">
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+     <item>4</item>
+   </string-array>
+   
+   <string-array name="panelvalues">
+     <item>1</item>
+     <item>2</item>
+   </string-array>
+   
+   <string-array name="select_dialog_items">
+        <item>Donate via PayPal</item>
+        <item>Go to profile on XDA</item>
+        <item>Go to main thread</item>
+    </string-array>
+ </resources>

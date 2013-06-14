@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShadowAOSP</string>
+    <string name="about_shadow">Thank you for using the Shadow ROM! Team Shadow is a great team with several developers/modders/themers etc. who you might know of the Desire X forums. This ROM is all about features, speed and stability. Please note that we could make everything even better if you suggest what you would like in this ROM! You can always post a comment on the main thread, and the whole team will read every single comment and pay attention to what you want!</string>
+    <string name="appreciation">Please note that the whole Shadow Team has worked as hard as possible to provide you guys everything you want. We will not order you to show any kind of appreciation, but if you are a goodhearted man/woman, you hopefully will. And ofcourse, we would specially love it if you donated. You will get the ShadowStore Premium app, and you will be listed in the donators section in the main thread.</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>

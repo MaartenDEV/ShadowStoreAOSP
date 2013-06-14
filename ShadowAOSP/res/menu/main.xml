@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="About"/>
+    <item
+        android:id="@+id/appreciation"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="Appreciation"/>
+    <item
+        android:id="@+id/devs"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="Team members"/>
+    <item
+        android:id="@+id/bugs"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="Report bugs"/>
+    <item
+        android:id="@+id/signup"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="Log in"/>
+    <item
+        android:id="@+id/send"
+        android:orderInCategory="6"
+        android:showAsAction="never"
+        android:title="Send a message"/>
+    <item
+        android:id="@+id/files"
+        android:orderInCategory="7"
+        android:showAsAction="never"
+        android:title="Downloaded files"/>
+    <item
+        android:id="@+id/personalize"
+        android:orderInCategory="8"
+        android:showAsAction="never"
+        android:title="Personalize"/>
+    <item
+        android:id="@+id/prefs"
+        android:orderInCategory="9"
+        android:showAsAction="never"
+        android:title="Preferences"
+        android:visibility="gone"/>
+    <item
+        android:id="@+id/bootmanager"
+        android:orderInCategory="10"
+        android:showAsAction="never"
+        android:title="Boot manager"
+        android:visibility="gone"/>
+
+</menu>

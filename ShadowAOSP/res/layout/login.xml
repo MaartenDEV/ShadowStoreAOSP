@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/loginname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="122dp"
+        android:ems="10"
+        android:hint="Name..."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="300px"
+        android:layout_height="75px"
+        android:layout_alignLeft="@+id/loginpassword"
+        android:layout_below="@+id/loginpassword"
+        android:layout_marginTop="32dp"
+        android:onClick="logIn"
+        android:text="Log in" />
+
+    <TextView
+        android:id="@+id/textlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="52dp"
+        android:text="Login with a ShadowDX account"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginname"
+        android:layout_below="@+id/loginname"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Password..."
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="goToSignUp"
+        android:text="Sign up" />
+
+</RelativeLayout>

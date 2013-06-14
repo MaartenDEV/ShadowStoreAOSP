@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!--
+    <com.markupartist.android.widget.PullToRefreshListView
+    android:id="@+id/android:list"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    />
+    -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_to_refresh_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="376dp"
+        android:layout_weight="0.96"
+        android:divider="#D8D8D8" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D8D8D8" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_below="@+id/layout"
+        android:background="#FFFFFF" >
+
+        <Button
+            android:id="@+id/refresh_chat"
+            android:layout_width="240px"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:onClick="refreshChat"
+            android:text="Refresh"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <Button
+            android:id="@+id/new_message"
+            android:layout_width="240px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/refresh_chat"
+            android:background="#FFFFFF"
+            android:onClick="newMessage"
+            android:text="New"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone" />
+
+</LinearLayout>
